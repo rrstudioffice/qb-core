@@ -20,24 +20,31 @@ QBConfig.Player.Bloodtypes = {
 
 QBConfig.Server = {}                                    -- General server config
 QBConfig.Server.Closed = false                          -- Set server closed (no one can join except people with ace permission 'qbadmin.join')
-QBConfig.Server.ClosedReason = 'Server Closed'          -- Reason message to display when people can't join the server
+QBConfig.Server.ClosedReason = 'Servidor offline'       -- Reason message to display when people can't join the server
 QBConfig.Server.Uptime = 0                              -- Time the server has been up.
 QBConfig.Server.Whitelist = false                       -- Enable or disable whitelist on the server
 QBConfig.Server.WhitelistPermission = 'admin'           -- Permission that's able to enter the server when the whitelist is on
 QBConfig.Server.PVP = true                              -- Enable or disable pvp on the server (Ability to shoot other players)
-QBConfig.Server.Discord = ''                            -- Discord invite link
+QBConfig.Server.Discord = 'https://discord.gg/sgmSDjmk' -- Discord invite link
 QBConfig.Server.CheckDuplicateLicense = true            -- Check for duplicate rockstar license on join
-QBConfig.Server.Permissions = { 'god', 'admin', 'mod' } -- Add as many groups as you want here after creating them in your server.cfg
+QBConfig.Server.Permissions = {                         -- Add as many groups as you want here after creating them in your server.cfg
+    'god',
+    'admin',
+    'mod',
+    'founder',
+    'police',
+    'vip'
+}
 
-QBConfig.Commands = {}                                  -- Command Configuration
-QBConfig.Commands.OOCColor = { 255, 151, 133 }          -- RGB color code for the OOC command
+QBConfig.Commands = {}                         -- Command Configuration
+QBConfig.Commands.OOCColor = { 255, 151, 133 } -- RGB color code for the OOC command
 
 QBConfig.Notify = {}
 
 QBConfig.Notify.NotificationStyling = {
-    group = false,      -- Allow notifications to stack with a badge instead of repeating
-    position = 'right', -- top-left | top-right | bottom-left | bottom-right | top | bottom | left | right | center
-    progress = true     -- Display Progress Bar
+    group = false,          -- Allow notifications to stack with a badge instead of repeating
+    position = 'top-right', -- top-left | top-right | bottom-left | bottom-right | top | bottom | left | right | center
+    progress = true         -- Display Progress Bar
 }
 
 -- These are how you define different notification variants

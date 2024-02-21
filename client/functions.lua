@@ -176,7 +176,7 @@ function QBCore.Functions.Notify(text, texttype, length)
         local ttext = text.text or 'Placeholder'
         local caption = text.caption or 'Placeholder'
         texttype = texttype or 'primary'
-        length = length or 5000
+        length = length or 7000
         SendNUIMessage({
             action = 'notify',
             type = texttype,
@@ -186,7 +186,7 @@ function QBCore.Functions.Notify(text, texttype, length)
         })
     else
         texttype = texttype or 'primary'
-        length = length or 5000
+        length = length or 7000
         SendNUIMessage({
             action = 'notify',
             type = texttype,

@@ -4,6 +4,11 @@ local function hideText()
     })
 end
 
+
+local function drawMarker(coord)
+    DrawMarker(1, coord.x, coord.y, coord.z, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 3.0, 3.0, 1.0, 50, 200, 50, 100, false, true, 2, false, '', '', false)
+end
+
 local function drawText(text, position)
     if type(position) ~= 'string' then position = 'left' end
 
@@ -38,6 +43,10 @@ local function keyPressed()
     end)
 end
 
+RegisterNetEvent('qb-core:client:DrawMarker', function(position)
+    drawMarker(position)
+end)
+
 RegisterNetEvent('qb-core:client:DrawText', function(text, position)
     drawText(text, position)
 end)
@@ -54,6 +63,7 @@ RegisterNetEvent('qb-core:client:KeyPressed', function()
     keyPressed()
 end)
 
+exports('DrawMarker', drawMarker)
 exports('DrawText', drawText)
 exports('ChangeText', changeText)
 exports('HideText', hideText)
