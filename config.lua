@@ -23,7 +23,8 @@ QBConfig.Server.Closed = false                          -- Set server closed (no
 QBConfig.Server.ClosedReason = 'Servidor offline'       -- Reason message to display when people can't join the server
 QBConfig.Server.Uptime = 0                              -- Time the server has been up.
 QBConfig.Server.Whitelist = false                       -- Enable or disable whitelist on the server
-QBConfig.Server.WhitelistPermission = 'admin'           -- Permission that's able to enter the server when the whitelist is on
+QBConfig.Server.WhitelistPermission =
+'admin'                                                 -- Permission that's able to enter the server when the whitelist is on
 QBConfig.Server.PVP = true                              -- Enable or disable pvp on the server (Ability to shoot other players)
 QBConfig.Server.Discord = 'https://discord.gg/sgmSDjmk' -- Discord invite link
 QBConfig.Server.CheckDuplicateLicense = true            -- Check for duplicate rockstar license on join
@@ -33,7 +34,6 @@ QBConfig.Server.Permissions = {                         -- Add as many groups as
     'mod',
     'founder',
     'police',
-    'vip'
 }
 
 QBConfig.Commands = {}                         -- Command Configuration
@@ -70,5 +70,13 @@ QBConfig.Notify.VariantDefinitions = {
     ambulance = {
         classes = 'ambulance',
         icon = 'fas fa-ambulance'
+    },
+    gang = {
+        classes = 'gang',
+        icon = 'fas fa-user'
+    },
+    vip = {
+        classes = 'vip',
+        icon = 'fas fa-user'
     }
 }

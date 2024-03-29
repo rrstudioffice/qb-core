@@ -334,6 +334,37 @@ QBShared.Items = {
   bank_card                    = { name = 'bank_card', label = 'Cartão do banco', weight = 0, type = 'item', image = 'bank_card.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar caixas eletrônicos' },
   security_card_01             = { name = 'security_card_01', label = 'Cartão de segurança A', weight = 0, type = 'item', image = 'security_card_01.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Um cartão de segurança... eu me pergunto para que serve' },
   security_card_02             = { name = 'security_card_02', label = 'Cartão de segurança B', weight = 0, type = 'item', image = 'security_card_02.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Um cartão de segurança... eu me pergunto para que serve' },
+
+  -- Cityhall
+  mayor_key                    = { name = 'mayor_key', label = 'Chave sala do Prefeito', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar a sala do Prefeito' },
+  submayor_key                 = { name = 'submayor_key', label = 'Chave sala do Subprefeito', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar a sala do Sub Prefeito' },
+  councilor_key                = { name = 'councilor_key', label = 'Chave sala do Vereador', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar salas da Prefeitura' },
+
+  keys_mirror1_1               = { name = 'keys_mirror1_1', label = 'Chave da Casa', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar salas da Prefeitura' },
+  keys_mirror1_2               = { name = 'keys_mirror1_2', label = 'Chave da Casa', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar salas da Prefeitura' },
+
+  pinkcage_room1               = { name = 'pinkcage_room1', label = 'Chave quarto 1', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 1 do hotel' },
+  pinkcage_room2               = { name = 'pinkcage_room2', label = 'Chave quarto 2', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 2 do hotel' },
+  pinkcage_room3               = { name = 'pinkcage_room3', label = 'Chave quarto 3', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 3 do hotel' },
+  pinkcage_room4               = { name = 'pinkcage_room4', label = 'Chave quarto 4', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 4 do hotel' },
+  pinkcage_room5               = { name = 'pinkcage_room5', label = 'Chave quarto 5', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 5 do hotel' },
+  pinkcage_room6               = { name = 'pinkcage_room6', label = 'Chave quarto 6', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 6 do hotel' },
+  pinkcage_room7               = { name = 'pinkcage_room7', label = 'Chave quarto 7', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 7 do hotel' },
+  pinkcage_room8               = { name = 'pinkcage_room8', label = 'Chave quarto 8', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 8 do hotel' },
+  pinkcage_room9               = { name = 'pinkcage_room9', label = 'Chave quarto 9', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 9 do hotel' },
+  pinkcage_room10              = { name = 'pinkcage_room10', label = 'Chave quarto 10', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 10 do hotel' },
+  pinkcage_room11              = { name = 'pinkcage_room11', label = 'Chave quarto 11', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 11 do hotel' },
+  pinkcage_room12              = { name = 'pinkcage_room12', label = 'Chave quarto 12', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 12 do hotel' },
+  pinkcage_room13              = { name = 'pinkcage_room13', label = 'Chave quarto 13', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 13 do hotel' },
+  pinkcage_room14              = { name = 'pinkcage_room14', label = 'Chave quarto 14', weight = 0, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Usado para acessar qaurto 14 do hotel' },
+
+  -- Card VIP
+  vip1_license                 = { name = 'vip1_license', label = 'Vip 1', weight = 0, type = 'item', image = 'id_card.png', unique = true, useable = true, shouldClose = false, combinable = nil, description = 'Um cartão contendo todas os acessos ao VIP 1' },
+  vip2_license                 = { name = 'vip2_license', label = 'Vip 2', weight = 0, type = 'item', image = 'id_card.png', unique = true, useable = true, shouldClose = false, combinable = nil, description = 'Um cartão contendo todas os acessos ao VIP 2' },
+  vip3_license                 = { name = 'vip3_license', label = 'Vip 3', weight = 0, type = 'item', image = 'id_card.png', unique = true, useable = true, shouldClose = false, combinable = nil, description = 'Um cartão contendo todas os acessos ao VIP 3' },
+  vip4_license                 = { name = 'vip4_license', label = 'Vip 4', weight = 0, type = 'item', image = 'id_card.png', unique = true, useable = true, shouldClose = false, combinable = nil, description = 'Um cartão contendo todas os acessos ao VIP 4' },
+  vip5_license                 = { name = 'vip5_license', label = 'Vip 5', weight = 0, type = 'item', image = 'id_card.png', unique = true, useable = true, shouldClose = false, combinable = nil, description = 'Um cartão contendo todas os acessos ao VIP 5' },
+
   -- Card ITEMS GYM
   gym_license                  = { name = 'gym_license', label = 'Adesão à academia', weight = 0, type = 'item', image = 'id_card.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Um cartão de matrícula... Vamos manter a forma' },
   powerade                     = { name = 'powerade', label = 'Powerade', weight = 200, type = 'item', image = 'water_bottle.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Um cartão de matrícula... Vamos manter a forma' },
@@ -371,8 +402,8 @@ QBShared.Items = {
   oxy                          = { name = 'oxy', label = 'Prescrição de Oxi', weight = 0, type = 'item', image = 'oxy.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A etiqueta foi arrancada' },
   meth                         = { name = 'meth', label = 'Metanfetamina', weight = 100, type = 'item', image = 'meth_baggy.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Um saquinho de metanfetamina' },
   rolling_paper                = { name = 'rolling_paper', label = 'Papel para enrolar', weight = 0, type = 'item', image = 'rolling_paper.png', unique = false, useable = false, shouldClose = true, combinable = { accept = { 'weed_whitewidow', 'weed_skunk', 'weed_purplehaze', 'weed_ogkush', 'weed_amnesia', 'weed_ak47' }, reward = 'joint', anim = { dict = 'anim@amb@business@weed@weed_inspecting_high_dry@', lib = 'weed_inspecting_high_base_inspector', text = 'Rolling joint', timeOut = 5000, } }, description = 'Papel feito especificamente para embalar e fumar tabaco ou cannabis.' },
-  
-  -- MACONHA
+
+  -- FOLHA DA MACONHA
   marijuana_leaf               = { name = 'marijuana_leaf', label = 'Folha de maconha', weight = 50, type = 'item', image = 'cocaineleaf.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Folhas de maconha para produção de Tablete de maconha.' },
 
   -- Seed And Weed
