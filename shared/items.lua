@@ -400,7 +400,7 @@ QBShared.Items = {
   weed_brick                   = { name = 'weed_brick', label = 'Pacote de Maconha', weight = 1000, type = 'item', image = 'weed_brick.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = '1KG para vender para grandes clientes.' },
   coke_small_brick             = { name = 'coke_small_brick', label = 'Pacote de Coca', weight = 350, type = 'item', image = 'coke_small_brick.png', unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Pequeno pacote de cocaína, usado principalmente para negócios e ocupa muito espaço' },
   oxy                          = { name = 'oxy', label = 'Prescrição de Oxi', weight = 0, type = 'item', image = 'oxy.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A etiqueta foi arrancada' },
-  meth                         = { name = 'meth', label = 'Metanfetamina', weight = 100, type = 'item', image = 'meth_baggy.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Um saquinho de metanfetamina' },
+  -- meth                         = { name = 'meth', label = 'Metanfetamina', weight = 100, type = 'item', image = 'meth_baggy.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Um saquinho de metanfetamina' },
   rolling_paper                = { name = 'rolling_paper', label = 'Papel para enrolar', weight = 0, type = 'item', image = 'rolling_paper.png', unique = false, useable = false, shouldClose = true, combinable = { accept = { 'weed_whitewidow', 'weed_skunk', 'weed_purplehaze', 'weed_ogkush', 'weed_amnesia', 'weed_ak47' }, reward = 'joint', anim = { dict = 'anim@amb@business@weed@weed_inspecting_high_dry@', lib = 'weed_inspecting_high_base_inspector', text = 'Rolling joint', timeOut = 5000, } }, description = 'Papel feito especificamente para embalar e fumar tabaco ou cannabis.' },
 
   -- FOLHA DA MACONHA
@@ -421,13 +421,6 @@ QBShared.Items = {
   weed_ak47_seed               = { name = 'weed_ak47_seed', label = 'AK47 Seed', weight = 0, type = 'item', image = 'weed_seed.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A weed seed of AK47' },
   empty_weed_bag               = { name = 'empty_weed_bag', label = 'Empty Weed Bag', weight = 0, type = 'item', image = 'weed_baggy_empty.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'A small empty bag' },
   weed_nutrition               = { name = 'weed_nutrition', label = 'Plant Fertilizer', weight = 2000, type = 'item', image = 'weed_nutrition.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Plant nutrition' },
-  -- QS-HOUSING
-  ['weed_white-widow']         = { ['name'] = 'weed_white-widow', ['label'] = 'White Widow 2g', ['weight'] = 200, ['type'] = 'item', ['image'] = 'weed_baggy.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'Um saco de maconha com 2g White Widow' },
-  ['weed_purple-haze']         = { ['name'] = 'weed_purple-haze', ['label'] = 'Purple Haze 2g', ['weight'] = 200, ['type'] = 'item', ['image'] = 'weed_baggy.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A weed bag with 2g Purple Haze' },
-  ['weed_og-kush']             = { ['name'] = 'weed_og-kush', ['label'] = 'OGKush 2g', ['weight'] = 200, ['type'] = 'item', ['image'] = 'weed_baggy.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A weed bag with 2g OG Kush' },
-  ['weed_white-widow_seed']    = { ['name'] = 'weed_white-widow_seed', ['label'] = 'White Widow Seed', ['weight'] = 0, ['type'] = 'item', ['image'] = 'weed_seed.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A weed seed of White Widow' },
-  ['weed_purple-haze_seed']    = { ['name'] = 'weed_purple-haze_seed', ['label'] = 'Purple Haze Seed', ['weight'] = 0, ['type'] = 'item', ['image'] = 'weed_seed.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A weed seed of Purple Haze' },
-  ['weed_og-kush_seed']        = { ['name'] = 'weed_og-kush_seed', ['label'] = 'OGKush Seed', ['weight'] = 0, ['type'] = 'item', ['image'] = 'weed_seed.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A weed seed of OG Kush' },
 
   -- Material
   plastic                      = { name = 'plastic', label = 'Plastic', weight = 100, type = 'item', image = 'plastic.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'RECYCLE! - Greta Thunberg 2019' },
@@ -589,6 +582,125 @@ QBShared.Items = {
     ["shouldClose"] = false,
     ["combinable"] = nil,
     ["description"] = "eu sou uma bolsa, sou baag, sou baaaaag"
+  },
+
+  -- QS-HOUSING
+  ['weed_white-widow']         = { ['name'] = 'weed_white-widow', ['label'] = 'White Widow 2g', ['weight'] = 200, ['type'] = 'item', ['image'] = 'weed_baggy.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'Um saco de maconha com 2g White Widow' },
+  ['weed_purple-haze']         = { ['name'] = 'weed_purple-haze', ['label'] = 'Purple Haze 2g', ['weight'] = 200, ['type'] = 'item', ['image'] = 'weed_baggy.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A weed bag with 2g Purple Haze' },
+  ['weed_og-kush']             = { ['name'] = 'weed_og-kush', ['label'] = 'OGKush 2g', ['weight'] = 200, ['type'] = 'item', ['image'] = 'weed_baggy.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A weed bag with 2g OG Kush' },
+  ['weed_white-widow_seed']    = { ['name'] = 'weed_white-widow_seed', ['label'] = 'White Widow Seed', ['weight'] = 0, ['type'] = 'item', ['image'] = 'weed_seed.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A weed seed of White Widow' },
+  ['weed_purple-haze_seed']    = { ['name'] = 'weed_purple-haze_seed', ['label'] = 'Purple Haze Seed', ['weight'] = 0, ['type'] = 'item', ['image'] = 'weed_seed.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A weed seed of Purple Haze' },
+  ['weed_og-kush_seed']        = { ['name'] = 'weed_og-kush_seed', ['label'] = 'OGKush Seed', ['weight'] = 0, ['type'] = 'item', ['image'] = 'weed_seed.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A weed seed of OG Kush' },
+
+  tshirt                       = { name = 'tshirt', label = 'T-shirt', weight = 0, type = 'item', image = 'tshirt.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Tshirt' },
+  torso                        = { name = 'torso', label = 'Torso', weight = 0, type = 'item', image = 'torso.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Torso' },
+  arms                         = { name = 'arms', label = 'Arms', weight = 0, type = 'item', image = 'arms.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Arms' },
+  jeans                        = { name = 'jeans', label = 'Jeans', weight = 0, type = 'item', image = 'jeans.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Jeans' },
+  shoes                        = { name = 'shoes', label = 'Shoes', weight = 0, type = 'item', image = 'shoes.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Shoes' },
+  mask                         = { name = 'mask', label = 'Mask', weight = 0, type = 'item', image = 'mask.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Mask' },
+  ears                         = { name = 'ears', label = 'Ears', weight = 0, type = 'item', image = 'ears.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Ears' },
+  glasses                      = { name = 'glasses', label = 'Glasses', weight = 0, type = 'item', image = 'glasses.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Glasses' },
+  helmet                       = { name = 'helmet', label = 'Helmet', weight = 0, type = 'item', image = 'helmet.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Helmet' },
+  bag                          = { name = 'bag', label = 'Bag', weight = 0, type = 'item', image = 'bag.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Bag' },
+
+  -- QS-INVENTORY
+  flare_airdrop                = { ['name'] = 'flare_airdrop', ['label'] = 'Flare Airdrop', ['weight'] = 200, ['type'] = 'item', ['image'] = 'flare_airdrop.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'With this I can call a plane to get weapons? Find out in the next episode!' },
+  cannabis                     = { ['name'] = 'cannabis', ['label'] = 'Cannabis', ['weight'] = 10, ['type'] = 'item', ['image'] = 'cannabis.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Hey brother, I think this is so natural...' },
+
+  ['weed']                     = { ['name'] = 'weed', ['label'] = 'Weed', ['weight'] = 10, ['type'] = 'item', ['image'] = 'weed.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'No have' },
+  ['weed_packaged']            = { ['name'] = 'weed_packaged', ['label'] = 'weed_packaged', ['weight'] = 10, ['type'] = 'item', ['image'] = 'weed_packaged.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'No have' },
+  ['cocaine']                  = { ['name'] = 'cocaine', ['label'] = 'cocaine', ['weight'] = 10, ['type'] = 'item', ['image'] = 'cocaine.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'No have' },
+  ['cocaine_cut']              = { ['name'] = 'cocaine_cut', ['label'] = 'cocaine_cut', ['weight'] = 10, ['type'] = 'item', ['image'] = 'cocaine_cut.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'No have' },
+  ['cocaine_packaged']         = { ['name'] = 'cocaine_packaged', ['label'] = 'cocaine_packaged', ['weight'] = 10, ['type'] = 'item', ['image'] = 'cocaine_packaged.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'No have' },
+  ['chemicals']                = { ['name'] = 'chemicals', ['label'] = 'chemicals', ['weight'] = 10, ['type'] = 'item', ['image'] = 'chemicals.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'No have' },
+  ['meth']                     = { ['name'] = 'meth', ['label'] = 'meth', ['weight'] = 10, ['type'] = 'item', ['image'] = 'meth.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'No have' },
+  ['meth_packaged']            = { ['name'] = 'meth_packaged', ['label'] = 'meth_packaged', ['weight'] = 0, ['type'] = 'item', ['image'] = 'meth_packaged.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'No have' },
+  ['sorted_money']             = { ['name'] = 'sorted_money', ['label'] = 'sorted_money', ['weight'] = 0, ['type'] = 'item', ['image'] = 'sorted_money.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'No have' },
+  ['package_money']            = { ['name'] = 'package_money', ['label'] = 'package_money', ['weight'] = 0, ['type'] = 'item', ['image'] = 'package_money.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'No have' },
+
+  ['parachute_rainbow']        = {
+    ['name'] = 'parachute_rainbow',
+    ['label'] = 'Rainbow Parachute',
+    ['weight'] = 0,
+    ['type'] = 'item',
+    ['image'] = 'parachute_rainbow.png',
+    ['unique'] = true,
+    ['useable'] = true,
+    ['shouldClose'] = true,
+    ['combinable'] = nil,
+    ['description'] = 'A very nice parachute'
+  },
+  ['parachute_darkred']        = {
+    ['name'] = 'parachute_darkred',
+    ['label'] = 'Darkred Parachute',
+    ['weight'] = 4000,
+    ['type'] = 'item',
+    ['image'] = 'parachute_darkred.png',
+    ['unique'] = true,
+    ['useable'] = true,
+    ['shouldClose'] = true,
+    ['combinable'] = nil,
+    ['description'] = 'A very nice parachute'
+  },
+  ['parachute_yellow']         = {
+    ['name'] = 'parachute_yellow',
+    ['label'] = 'Yellow Parachute',
+    ['weight'] = 4000,
+    ['type'] = 'item',
+    ['image'] = 'parachute_yellow.png',
+    ['unique'] = true,
+    ['useable'] = true,
+    ['shouldClose'] = true,
+    ['combinable'] = nil,
+    ['description'] = 'A very nice parachute'
+  },
+  ['parachute_red']            = {
+    ['name'] = 'parachute_red',
+    ['label'] = 'Red Parachute',
+    ['weight'] = 4000,
+    ['type'] = 'item',
+    ['image'] = 'parachute_red.png',
+    ['unique'] = true,
+    ['useable'] = true,
+    ['shouldClose'] = true,
+    ['combinable'] = nil,
+    ['description'] = 'A very nice parachute'
+  },
+  ['parachute_white']          = {
+    ['name'] = 'parachute_white',
+    ['label'] = 'White Parachute',
+    ['weight'] = 4000,
+    ['type'] = 'item',
+    ['image'] = 'parachute_white.png',
+    ['unique'] = true,
+    ['useable'] = true,
+    ['shouldClose'] = true,
+    ['combinable'] = nil,
+    ['description'] = 'A very nice parachute'
+  },
+  ['parachute_blue']           = {
+    ['name'] = 'parachute_blue',
+    ['label'] = 'Blue Parachute',
+    ['weight'] = 4000,
+    ['type'] = 'item',
+    ['image'] = 'parachute_blue.png',
+    ['unique'] = true,
+    ['useable'] = true,
+    ['shouldClose'] = true,
+    ['combinable'] = nil,
+    ['description'] = 'A very nice parachute'
+  },
+  ['parachute_black']          = {
+    ['name'] = 'parachute_black',
+    ['label'] = 'Black Parachute',
+    ['weight'] = 4000,
+    ['type'] = 'item',
+    ['image'] = 'parachute_black.png',
+    ['unique'] = true,
+    ['useable'] = true,
+    ['shouldClose'] = true,
+    ['combinable'] = nil,
+    ['description'] = 'A very nice parachute'
   },
 
   -- --  BURGUERSHOT

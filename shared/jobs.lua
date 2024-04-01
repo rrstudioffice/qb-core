@@ -82,6 +82,15 @@ QBShared.Jobs = {
 			['4'] = { name = "Prefeito", isboss = true, payment = 150 },
 		},
 	},
+	court = {
+		label = "Supremo Tribunal Federal",
+		defaultDuty = true,
+		grades = {
+			['0'] = { name = "Advogado", payment = 50 },
+			['1'] = { name = "Juíz", payment = 100 },
+			['2'] = { name = "Ministro do STF", isboss = true, payment = 150 },
+		},
+	},
 	police = {
 		label = 'DP',
 		type = 'leo',

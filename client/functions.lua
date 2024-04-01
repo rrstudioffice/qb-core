@@ -13,7 +13,7 @@ function QBCore.Functions.GetCoords(entity)
 end
 
 function QBCore.Functions.HasItem(items, amount)
-    return exports['qb-inventory']:HasItem(items, amount)
+    return exports['qs-inventory']:HasItem(items, amount)
 end
 
 -- Utility
@@ -58,9 +58,18 @@ end
 ---@return number - The time at which the entity was looked at
 function QBCore.Functions.LookAtEntity(entity, timeout, speed)
     local involved = GetInvokingResource()
-    if not DoesEntityExist(entity) then turnPromise:reject(involved..' :^1  Entity does not exist')         return turnPromise.value end
-    if not type(entity) == 'number' then turnPromise:reject(involved..' :^1  Entity must be a number')     return turnPromise.value end
-    if not type(speed) == 'number' then turnPromise:reject(involved..' :^1  Speed must be a number')       return turnPromise.value end
+    if not DoesEntityExist(entity) then
+        turnPromise:reject(involved .. ' :^1  Entity does not exist')
+        return turnPromise.value
+    end
+    if not type(entity) == 'number' then
+        turnPromise:reject(involved .. ' :^1  Entity must be a number')
+        return turnPromise.value
+    end
+    if not type(speed) == 'number' then
+        turnPromise:reject(involved .. ' :^1  Speed must be a number')
+        return turnPromise.value
+    end
     if speed > 5.0 then speed = 5.0 end
     if timeout > 5000 then timeout = 5000 end
 
@@ -111,11 +120,11 @@ function QBCore.Functions.PlayAnim(animDict, animName, upperbodyOnly, duration)
     local invoked = GetInvokingResource()
     local animPromise = promise.new()
     if type(animDict) ~= 'string' or type(animName) ~= 'string' then
-        animPromise:reject(invoked..' :^1  Wrong type for animDict or animName')
+        animPromise:reject(invoked .. ' :^1  Wrong type for animDict or animName')
         return animPromise.value
     end
     if not DoesAnimDictExist(animDict) then
-        animPromise:reject(invoked..' :^1  Animation dictionary does not exist')
+        animPromise:reject(invoked .. ' :^1  Animation dictionary does not exist')
         return animPromise.value
     end
 
@@ -127,7 +136,7 @@ function QBCore.Functions.PlayAnim(animDict, animName, upperbodyOnly, duration)
     while not HasAnimDictLoaded(animDict) do
         RequestAnimDict(animDict)
         if (GetGameTimer() - start) > 5000 then
-            animPromise:reject(invoked..' :^1  Animation dictionary failed to load')
+            animPromise:reject(invoked .. ' :^1  Animation dictionary failed to load')
             return animPromise.value
         end
         Wait(1)
@@ -137,7 +146,7 @@ function QBCore.Functions.PlayAnim(animDict, animName, upperbodyOnly, duration)
     Wait(10) -- Wait a bit for the animation to start, then check if it exists
     local currentTime = GetAnimDuration(animDict, animName)
     if currentTime == 0 then
-        animPromise:reject(invoked..' :^1  Animation does not exist')
+        animPromise:reject(invoked .. ' :^1  Animation does not exist')
         return animPromise.value
     end
 
@@ -218,8 +227,12 @@ function QBCore.Functions.TriggerCallback(name, cb, ...)
     TriggerServerEvent('QBCore:Server:TriggerCallback', name, ...)
 end
 
-function QBCore.Functions.Progressbar(name, label, duration, useWhileDead, canCancel, disableControls, animation, prop, propTwo, onFinish, onCancel)
-    if GetResourceState('progressbar') ~= 'started' then error('progressbar needs to be started in order for QBCore.Functions.Progressbar to work') end
+function QBCore.Functions.Progressbar(name, label, duration, useWhileDead, canCancel, disableControls, animation, prop,
+                                      propTwo, onFinish, onCancel)
+    if GetResourceState('progressbar') ~= 'started' then
+        error(
+            'progressbar needs to be started in order for QBCore.Functions.Progressbar to work')
+    end
     exports['progressbar']:Progress({
         name = name:lower(),
         duration = duration,
@@ -971,7 +984,8 @@ function QBCore.Functions.StartParticleAtCoord(dict, ptName, looped, coords, rot
     SetPtfxAssetNextCall(dict)
     local particleHandle
     if looped then
-        particleHandle = StartParticleFxLoopedAtCoord(ptName, coords.x, coords.y, coords.z, rot.x, rot.y, rot.z, scale or 1.0)
+        particleHandle = StartParticleFxLoopedAtCoord(ptName, coords.x, coords.y, coords.z, rot.x, rot.y, rot.z,
+            scale or 1.0)
         if color then
             SetParticleFxLoopedColour(particleHandle, color.r, color.g, color.b, false)
         end
@@ -990,7 +1004,8 @@ function QBCore.Functions.StartParticleAtCoord(dict, ptName, looped, coords, rot
     return particleHandle
 end
 
-function QBCore.Functions.StartParticleOnEntity(dict, ptName, looped, entity, bone, offset, rot, scale, alpha, color, evolution, duration)
+function QBCore.Functions.StartParticleOnEntity(dict, ptName, looped, entity, bone, offset, rot, scale, alpha, color,
+                                                evolution, duration)
     QBCore.Functions.LoadParticleDictionary(dict)
     UseParticleFxAssetNextCall(dict)
     local particleHandle, boneID
@@ -1001,9 +1016,11 @@ function QBCore.Functions.StartParticleOnEntity(dict, ptName, looped, entity, bo
     end
     if looped then
         if bone then
-            particleHandle = StartParticleFxLoopedOnEntityBone(ptName, entity, offset.x, offset.y, offset.z, rot.x, rot.y, rot.z, boneID, scale)
+            particleHandle = StartParticleFxLoopedOnEntityBone(ptName, entity, offset.x, offset.y, offset.z, rot.x, rot
+                .y, rot.z, boneID, scale)
         else
-            particleHandle = StartParticleFxLoopedOnEntity(ptName, entity, offset.x, offset.y, offset.z, rot.x, rot.y, rot.z, scale)
+            particleHandle = StartParticleFxLoopedOnEntity(ptName, entity, offset.x, offset.y, offset.z, rot.x, rot.y,
+                rot.z, scale)
         end
         if evolution then
             SetParticleFxLoopedEvolution(particleHandle, evolution.name, evolution.amount, false)
@@ -1022,7 +1039,8 @@ function QBCore.Functions.StartParticleOnEntity(dict, ptName, looped, entity, bo
             SetParticleFxNonLoopedColour(color.r, color.g, color.b)
         end
         if bone then
-            StartParticleFxNonLoopedOnPedBone(ptName, entity, offset.x, offset.y, offset.z, rot.x, rot.y, rot.z, boneID, scale)
+            StartParticleFxNonLoopedOnPedBone(ptName, entity, offset.x, offset.y, offset.z, rot.x, rot.y, rot.z, boneID,
+                scale)
         else
             StartParticleFxNonLoopedOnEntity(ptName, entity, offset.x, offset.y, offset.z, rot.x, rot.y, rot.z, scale)
         end
@@ -1083,15 +1101,14 @@ function QBCore.Functions.GetGroundZCoord(coords)
     if retval then
         return vector3(coords.x, coords.y, groundZ)
     else
-        print('Couldn\'t find Ground Z Coordinates given 3D Coordinates')
-        print(coords)
         return coords
     end
 end
 
 function QBCore.Functions.GetGroundHash(entity)
     local coords = GetEntityCoords(entity)
-    local num = StartShapeTestCapsule(coords.x, coords.y, coords.z + 4, coords.x, coords.y, coords.z - 2.0, 1, 1, entity, 7)
+    local num = StartShapeTestCapsule(coords.x, coords.y, coords.z + 4, coords.x, coords.y, coords.z - 2.0, 1, 1, entity,
+        7)
     local retval, success, endCoords, surfaceNormal, materialHash, entityHit = GetShapeTestResultEx(num)
     return materialHash, entityHit, surfaceNormal, endCoords, success, retval
 end
