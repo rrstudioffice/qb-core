@@ -1,7 +1,7 @@
 QBShared = QBShared or {}
 QBShared.ForceJobDefaultDutyAtLogin = true -- true: Force duty state to jobdefaultDuty | false: set duty state from database last saved
 QBShared.Jobs = {
-	unemployed = { label = 'Civilian', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Autonomo', payment = 10 } } },
+	unemployed = { label = 'Cidadão', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Autonomo', payment = 10 } } },
 	bus = { label = 'Ônibus', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Motorista', payment = 50 } } },
 	judge = { label = 'Tribunal', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Juiz', payment = 100 } } },
 	lawyer = { label = 'Advocacia', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Associado', payment = 50 } } },
@@ -10,6 +10,7 @@ QBShared.Jobs = {
 	garbage = { label = 'Lixeiro', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Coletor', payment = 50 } } },
 	vineyard = { label = 'Vinhedo', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Seletor', payment = 50 } } },
 	hotdog = { label = 'Hotdog', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Vendas', payment = 50 } } },
+	delivery = { label = "Delivery", defaultDuty = true, grades = { ['0'] = { name = "Entregador", payment = 50 }, } },
 	radio = {
 		label = 'Rádio',
 		type = 'fire',
@@ -23,15 +24,15 @@ QBShared.Jobs = {
 			['4'] = { name = 'Proprietário', isboss = true, payment = 150 },
 		},
 	},
-	news = {
-		label = 'Comunicação',
+	reporter = {
+		label = 'Jornalista',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
 			['0'] = { name = 'Estagiário', payment = 50 },
 			['1'] = { name = 'Câmera man', payment = 75 },
 			['2'] = { name = 'Jornalista', payment = 100 },
-			['3'] = { name = 'Locutor', payment = 125 },
+			['3'] = { name = 'Apresentador', payment = 125 },
 			['4'] = { name = 'Proprietário', isboss = true, payment = 150 },
 		},
 	},

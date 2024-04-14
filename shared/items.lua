@@ -518,21 +518,21 @@ QBShared.Items = {
   diving_fill                  = { name = 'diving_fill', label = 'Diving Tube', weight = 3000, type = 'item', image = 'diving_tube.png', unique = true, useable = true, shouldClose = true, combinable = nil, discription = 'An oxygen tube and a rebreather' },
 
   -- Other Tools
-  casinochips                  = { name = 'casinochips', label = 'Casino Chips', weight = 0, type = 'item', image = 'casinochips.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Chips For Casino Gambling' },
-  stickynote                   = { name = 'stickynote', label = 'Sticky note', weight = 0, type = 'item', image = 'stickynote.png', unique = true, useable = false, shouldClose = false, combinable = nil, description = 'Sometimes handy to remember something :)' },
-  moneybag                     = { name = 'moneybag', label = 'Money Bag', weight = 0, type = 'item', image = 'moneybag.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A bag with cash' },
-  parachute                    = { name = 'parachute', label = 'Parachute', weight = 30000, type = 'item', image = 'parachute.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'The sky is the limit! Woohoo!' },
-  binoculars                   = { name = 'binoculars', label = 'Binoculars', weight = 600, type = 'item', image = 'binoculars.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Sneaky Breaky...' },
+  casinochips                  = { name = 'casinochips', label = 'Fichas de Cassino', weight = 0, type = 'item', image = 'casinochips.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Chips For Casino Gambling' },
+  stickynote                   = { name = 'stickynote', label = 'Notas adesivas', weight = 0, type = 'item', image = 'stickynote.png', unique = true, useable = false, shouldClose = false, combinable = nil, description = 'Sometimes handy to remember something :)' },
+  moneybag                     = { name = 'moneybag', label = 'Bolsa de dinheiro', weight = 0, type = 'item', image = 'moneybag.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A bag with cash' },
+  parachute                    = { name = 'parachute', label = 'Paraquedas', weight = 30000, type = 'item', image = 'parachute.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'The sky is the limit! Woohoo!' },
+  binoculars                   = { name = 'binoculars', label = 'Binóculos', weight = 600, type = 'item', image = 'binoculars.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Sneaky Breaky...' },
   lighter                      = { name = 'lighter', label = 'Lighter', weight = 0, type = 'item', image = 'lighter.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'On new years eve a nice fire to stand next to' },
-  certificate                  = { name = 'certificate', label = 'Certificate', weight = 0, type = 'item', image = 'certificate.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'Certificate that proves you own certain stuff' },
-  markedbills                  = { name = 'markedbills', label = 'Marked Money', weight = 1000, type = 'item', image = 'markedbills.png', unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Money?' },
-  labkey                       = { name = 'labkey', label = 'Key', weight = 500, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Key for a lock...?' },
-  printerdocument              = { name = 'printerdocument', label = 'Document', weight = 500, type = 'item', image = 'printerdocument.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A nice document' },
-  newscam                      = { name = 'newscam', label = 'News Camera', weight = 100, type = 'item', image = 'newscam.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A camera for the news' },
-  newsmic                      = { name = 'newsmic', label = 'News Microphone', weight = 100, type = 'item', image = 'newsmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A microphone for the news' },
-  newsbmic                     = { name = 'newsbmic', label = 'Boom Microphone', weight = 100, type = 'item', image = 'newsbmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A Useable BoomMic' },
+  certificate                  = { name = 'certificate', label = 'Certificado', weight = 0, type = 'item', image = 'certificate.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'Certificate that proves you own certain stuff' },
+  markedbills                  = { name = 'markedbills', label = 'Dinheiro marcado', weight = 1000, type = 'item', image = 'markedbills.png', unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Money?' },
+  labkey                       = { name = 'labkey', label = 'Chave', weight = 500, type = 'item', image = 'labkey.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Key for a lock...?' },
+  printerdocument              = { name = 'printerdocument', label = 'Documento', weight = 500, type = 'item', image = 'printerdocument.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A nice document' },
+  newscam                      = { name = 'newscam', label = 'Câmera', weight = 100, type = 'item', image = 'newscam.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A camera for the news' },
+  newsmic                      = { name = 'newsmic', label = 'Microfone', weight = 100, type = 'item', image = 'newsmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A microphone for the news' },
+  newsbmic                     = { name = 'newsbmic', label = 'Microfone B', weight = 100, type = 'item', image = 'newsbmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A Useable BoomMic' },
 
-  lotto                        = { name = "lotto", label = "Lotto ticket", weight = 10, type = "item", image = "lotto.png", unique = false, useable = true, shouldClose = true, combinable = nil, description = "Bilhete da Sorte" },
+  lotto                        = { name = "lotto", label = "Raspadinha", weight = 10, type = "item", image = "lotto.png", unique = false, useable = true, shouldClose = true, combinable = nil, description = "Bilhete da Sorte" },
   -- scratch_card                = {},
   -- game_ticket                 = {},
 
@@ -702,6 +702,11 @@ QBShared.Items = {
     ['combinable'] = nil,
     ['description'] = 'A very nice parachute'
   },
+
+  -- CASSINO
+  casino_goldchip              = { ["name"] = "casino_goldchip", ["label"] = "Casino Chip", ["weight"] = 0, ["type"] = "item", ["image"] = "casino_goldchip.png", ["unique"] = false, ["useable"] = false, ["shouldClose"] = false, ["combinable"] = nil, ["description"] = "Diamond Casino Chip" },
+  casino_member                = { ["name"] = "casino_member", ["label"] = "Casino Membership", ["weight"] = 500, ["type"] = "item", ["image"] = "casino_member.png", ["unique"] = true, ["useable"] = false, ["shouldClose"] = false, ["combinable"] = nil, ["description"] = "Diamond Casino Member Card" },
+  casino_vip                   = { ["name"] = "casino_vip", ["label"] = "V.I.P Membership", ["weight"] = 500, ["type"] = "item", ["image"] = "casino_vip.png", ["unique"] = true, ["useable"] = false, ["shouldClose"] = false, ["combinable"] = nil, ["description"] = "Diamond Casino V.I.P Card" },
 
   -- --  BURGUERSHOT
   -- -- Burger Shot
